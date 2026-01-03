@@ -1,0 +1,207 @@
+import { Project, BudgetData, TransparencyTrend, Alert, Region } from '../types';
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    name: 'Rural Road Development Phase 2',
+    department: 'Infrastructure',
+    budgetAllocated: 15000000,
+    budgetSpent: 12500000,
+    outcomePercent: 78,
+    transparencyScore: 92,
+    status: 'good',
+    startDate: '2024-01-15',
+    endDate: '2025-12-31',
+  },
+  {
+    id: '2',
+    name: 'Digital Education Initiative',
+    department: 'Education',
+    budgetAllocated: 8500000,
+    budgetSpent: 7200000,
+    outcomePercent: 85,
+    transparencyScore: 88,
+    status: 'good',
+    startDate: '2024-03-01',
+    endDate: '2025-06-30',
+  },
+  {
+    id: '3',
+    name: 'Community Health Centers Upgrade',
+    department: 'Healthcare',
+    budgetAllocated: 12000000,
+    budgetSpent: 10800000,
+    outcomePercent: 65,
+    transparencyScore: 71,
+    status: 'medium',
+    startDate: '2024-02-10',
+    endDate: '2025-08-31',
+  },
+  {
+    id: '4',
+    name: 'Water Supply Modernization',
+    department: 'Infrastructure',
+    budgetAllocated: 20000000,
+    budgetSpent: 18500000,
+    outcomePercent: 45,
+    transparencyScore: 58,
+    status: 'low',
+    startDate: '2023-11-01',
+    endDate: '2025-10-31',
+  },
+  {
+    id: '5',
+    name: 'Agricultural Subsidy Program',
+    department: 'Agriculture',
+    budgetAllocated: 25000000,
+    budgetSpent: 22000000,
+    outcomePercent: 88,
+    transparencyScore: 94,
+    status: 'good',
+    startDate: '2024-01-01',
+    endDate: '2025-12-31',
+  },
+  {
+    id: '6',
+    name: 'Public Transport Enhancement',
+    department: 'Transport',
+    budgetAllocated: 18000000,
+    budgetSpent: 15500000,
+    outcomePercent: 72,
+    transparencyScore: 68,
+    status: 'medium',
+    startDate: '2024-04-01',
+    endDate: '2026-03-31',
+  },
+  {
+    id: '7',
+    name: 'Skill Development Centers',
+    department: 'Education',
+    budgetAllocated: 6500000,
+    budgetSpent: 5800000,
+    outcomePercent: 82,
+    transparencyScore: 86,
+    status: 'good',
+    startDate: '2024-05-15',
+    endDate: '2025-11-30',
+  },
+  {
+    id: '8',
+    name: 'Waste Management System',
+    department: 'Environment',
+    budgetAllocated: 10000000,
+    budgetSpent: 9200000,
+    outcomePercent: 55,
+    transparencyScore: 62,
+    status: 'medium',
+    startDate: '2024-01-20',
+    endDate: '2025-09-30',
+  },
+];
+
+export const budgetByDepartment: BudgetData[] = [
+  { department: 'Infrastructure', budget: 35000000, spent: 31000000 },
+  { department: 'Education', budget: 15000000, spent: 13000000 },
+  { department: 'Healthcare', budget: 12000000, spent: 10800000 },
+  { department: 'Agriculture', budget: 25000000, spent: 22000000 },
+  { department: 'Transport', budget: 18000000, spent: 15500000 },
+  { department: 'Environment', budget: 10000000, spent: 9200000 },
+];
+
+export const transparencyTrend: TransparencyTrend[] = [
+  { month: 'Jan', score: 72 },
+  { month: 'Feb', score: 75 },
+  { month: 'Mar', score: 74 },
+  { month: 'Apr', score: 78 },
+  { month: 'May', score: 80 },
+  { month: 'Jun', score: 82 },
+  { month: 'Jul', score: 79 },
+  { month: 'Aug', score: 81 },
+  { month: 'Sep', score: 83 },
+  { month: 'Oct', score: 85 },
+  { month: 'Nov', score: 84 },
+  { month: 'Dec', score: 86 },
+];
+
+export const alerts: Alert[] = [
+  {
+    id: '1',
+    projectName: 'Water Supply Modernization',
+    issue: 'Low transparency score (58%) and delayed outcomes',
+    severity: 'low',
+    date: '2024-12-15',
+  },
+  {
+    id: '2',
+    projectName: 'Community Health Centers Upgrade',
+    issue: 'Transparency score below target (71%)',
+    severity: 'medium',
+    date: '2024-12-18',
+  },
+  {
+    id: '3',
+    projectName: 'Waste Management System',
+    issue: 'Budget utilization at 92% with outcome at 55%',
+    severity: 'medium',
+    date: '2024-12-20',
+  },
+  {
+    id: '4',
+    projectName: 'Public Transport Enhancement',
+    issue: 'Moderate transparency concerns (68%)',
+    severity: 'medium',
+    date: '2024-12-22',
+  },
+];
+
+export const departments = [
+  'All Departments',
+  'Infrastructure',
+  'Education',
+  'Healthcare',
+  'Agriculture',
+  'Transport',
+  'Environment',
+];
+
+export const years = ['2024', '2023', '2022'];
+export const projectTypes = ['All Types', 'Infrastructure', 'Social Welfare', 'Development'];
+
+export const regions: Region[] = [
+  {
+    id: '1',
+    name: 'Northern District',
+    department: 'Infrastructure',
+    score: 88,
+  },
+  {
+    id: '2',
+    name: 'Central District',
+    department: 'Education',
+    score: 92,
+  },
+  {
+    id: '3',
+    name: 'Southern District',
+    department: 'Healthcare',
+    score: 71,
+  },
+  {
+    id: '4',
+    name: 'Eastern District',
+    department: 'Agriculture',
+    score: 85,
+  },
+  {
+    id: '5',
+    name: 'Western District',
+    department: 'Transport',
+    score: 68,
+  },
+  {
+    id: '6',
+    name: 'Coastal Zone',
+    department: 'Environment',
+    score: 78,
+  },
+];
