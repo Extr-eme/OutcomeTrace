@@ -16,7 +16,7 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
   return (
     <aside className="fixed left-0 top-0 w-64 bg-gray-400 border-r border-gray-200 min-h-screen">
       <div className="p-6">
-        <h1 className="text-2xl font-bold text-blue-600">Outcome Trace</h1>
+        <h1 className="text-2xl font-bold text-blue-600">अर्थ परिणाम</h1>
         <p className="text-xs text-gray-500 mt-1">Budget Transparency Platform</p>
       </div>
 
