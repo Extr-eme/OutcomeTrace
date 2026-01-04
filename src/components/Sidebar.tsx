@@ -14,7 +14,7 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
   ];
 
   return (
-    <aside className="w-64 bg-white border-r border-gray-200 min-h-screen">
+    <aside className="w-64 bg-gray-400 border-r border-gray-200 min-h-screen">
       <div className="p-6">
         <h1 className="text-2xl font-bold text-blue-600">Outcome Trace</h1>
         <p className="text-xs text-gray-500 mt-1">Budget Transparency Platform</p>
