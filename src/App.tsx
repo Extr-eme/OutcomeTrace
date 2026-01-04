@@ -25,17 +25,19 @@ function App() {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="bg-gray-50 min-h-screen">
+      {/* Fixed Sidebar */}
       <Sidebar currentPage={currentPage} onNavigate={setCurrentPage} />
 
-      <div className="flex-1 flex flex-col">
+      {/* Right content */}
+      <div className="ml-64 w-[calc(100vw-16rem)] flex flex-col min-h-screen">
         <Header />
 
-        <main className="flex-1 p-8">
+        <main className="flex-1 w-full overflow-y-auto p-8">
           {renderPage()}
         </main>
 
-        <footer className="bg-white border-t border-gray-200 px-8 py-4">
+        <footer className="bg-white border-t border-gray-200 px-8 py-4 w-full">
           <p className="text-sm text-gray-500 text-center">
             Outcome Trace © 2024 - Government Budget Transparency Platform
           </p>
