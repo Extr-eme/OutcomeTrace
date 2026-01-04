@@ -174,7 +174,16 @@ export default function Projects() {
                   </span>
                 </div>
               </div>
+              <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                  <span className="text-sm text-gray-600">Citizenship Satisfaction</span>
+                  <span className="text-sm font-semibold text-gray-800">
+                {(
+                0.7 * selectedProjectData.outcomePercent +
+                 0.3 * (selectedProjectData.budgetSpent / selectedProjectData.budgetAllocated * 100)
+                  ).toFixed(1)}%                  </span>
+                </div>
             </div>
+            
 
             <div>
               <h4 className="text-sm font-semibold text-gray-700 mb-4">Performance Metrics</h4>
@@ -191,6 +200,19 @@ export default function Projects() {
                     ></div>
                   </div>
                 </div>
+                <div>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm text-gray-600">Complaint Alignment</span>
+                    <span className="text-sm font-semibold text-gray-800">{selectedProjectData.ComplainAlignment}%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-3">
+                    <div
+                      className="bg-green-600 h-3 rounded-full transition-all duration-300"
+                      style={{ width: `${selectedProjectData.ComplainAlignment}%` }}
+                    ></div>
+                  </div>
+                </div>
+                
                 <div>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-sm text-gray-600">Transparency Score</span>

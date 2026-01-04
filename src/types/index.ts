@@ -14,6 +14,7 @@ export interface Project {
   status: 'good' | 'medium' | 'low';
   startDate: string;
   endDate: string;
+  ComplainAlignment: number;
 }
 
 export interface BudgetData {
